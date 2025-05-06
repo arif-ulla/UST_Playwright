@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Dashboard</a>
+            <a href="books.html">My Books</a>
+            <a href="add-book.html">Add Book</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome back, <span id="usernameDisplay"></span></h1>
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Books Read</h3>
+                <p id="booksRead">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Want to Read</h3>
+                <p id="wantToRead">0</p>
+            </div>
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <ul id="activityList"></ul>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script> 
+</body>
+</html>
