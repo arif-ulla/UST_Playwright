@@ -1,0 +1,241 @@
+/* Global Styles */
+:root {
+    --primary-color: #0ef;
+    --secondary-color: #1f242d;
+    --text-color: #fff;
+    --bg-color: #323946;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--primary-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+h2 {
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Home Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.hero-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 1rem 0;
+}
+
+.hero-content h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.typing-text {
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 1.6rem;
+    max-width: 600px;
+}
+
+.hero-image img {
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* About Section */
+.about-section {
+    background: var(--bg-color);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-image img {
+    width: 35vw;
+    border-radius: 50%;
+    border: .2rem solid var(--primary-color);
+}
+
+.about-text h3 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.detail {
+    display: flex;
+    gap: 1rem;
+}
+
+.detail span {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.detail p {
+    font-size: 1.6rem;
+}
+
+/* Skills Section */
+.skills-section h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.skills-container h3 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.skill-item {
+    margin-bottom: 3rem;
+}
+
+.skill-item p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
