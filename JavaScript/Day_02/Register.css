@@ -1,0 +1,30 @@
+input {
+    margin-bottom: 25px;
+    width: 220px;
+    height: 25px
+}
+
+#submit {
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    font-size: medium;
+    border-radius: 8px;
+}
+
+#myform {
+    margin-top: 80px;
+    margin-left: 100px;
+    
+}
+
+#validationMsg {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+#vmsg {
+    font-size: large;
+    font-weight: bold;
+    color: red;
+}

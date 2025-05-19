@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+        // function m_enter(){
+        //     this.innerHTML = 'Mouse Entered';
+        // }
+        
+        function pressed(){
+            alert('key is pressed')
+        }
+        function keydown(){
+            alert('down key pressed')
+        }
+    </script>
+</head>
+<!--onload event-->
+<body onload="alert('Page is loaded')">
+    <!--onclick event-->
+    <button onclick="this.innerHTML = Date()">The time is :</button>
+    
+    <!--onmouseenter and onmouseleave events-->
+    <button onmouseenter="this.innerHTML = 'Mouse Entered'"
+            onmouseleave="this.innerHTML = 'Mouse Left'"
+    >Mouse</button>
+
+    <!--onkeypress and onkeydown events-->
+    <input type="text" onkeypress="pressed()">
+
+</body>
+</html>

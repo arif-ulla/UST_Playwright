@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout</title>
+    <script>
+        function btnClick() {
+            alert('Button is clicked')
+        }
+    </script>
+</head>
+<body>
+    
+    <!--setTimeout - perform after the set time-->
+    <button onclick="t_out = setTimeout(btnClick, 3000)">Timeout</button>
+
+    <!--setInterval - perform every few secs (interval)-->
+    <button onclick="clearTimeout(t_out)">Stop</button>
+
+
+    
+</body>
+</html>
